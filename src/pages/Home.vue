@@ -13,10 +13,11 @@
 </template>
 
 <script>
-import { ref, onMounted, watch, computed } from 'vue'
+import { defineProps, ref, onMounted, watch, computed } from 'vue'
 export default {
   name: 'HelloWorld',
   setup(props) {
+    // const { title } = toRefs(props)
     const count = ref(0)
     const msg = ref('Home Page')
     const todos = ref([])
@@ -70,6 +71,9 @@ export default {
     watch(count, (newValue, oldValue) => {
       console.log('The new count value is: ' + count.value)
     })
+    // watch([first, second], (newValue, oldValue) => {
+    //   // console.log(newValue, oldValue)
+    // })
     return {
       msg,
       count,
