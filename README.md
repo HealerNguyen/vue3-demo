@@ -1,4 +1,4 @@
-# vue3-demo
+# vue3-demo with vite
 Demo vuejs vesion 3 with vitejs
 
 ## Build Setup
